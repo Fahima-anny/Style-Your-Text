@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body>
+
+
+<h1 class="font-semibold text-5xl text-center text-info">Style Your Text</h1>
+ 
+<div class="flex flex-col md:flex-row gap-3 justify-between items-center mx-36 my-16">
+
+  <div class="flex gap-3">
+    <p id="boldBtn" class="h-[50px] border-2 border-black w-[50px] text-4xl text-center font-bold bg-slate-400">B</p>
+      <p class="h-[50px] border-2 border-black w-[50px] text-4xl text-center font-bold bg-slate-400" id="underlineBtn"><u>U</u></p>
+      <p class="h-[50px] border-2 border-black w-[50px] text-4xl text-center font-bold bg-slate-400 font-mono" id="italicBtn"><i>I</i></p>
+  </div>
+
+  <div class="flex gap-3">
+    <p class="h-[50px] border-2 border-black w-[50px] bg-slate-400 flex justify-center items-center" id="textLeftBtn"><img src="https://i.ibb.co/zVF1mHX/left-align.png" alt=""></p>
+    <p class="h-[50px] border-2 border-black w-[50px] bg-slate-400 flex justify-center items-center" id="textCenterBtn"><img src="https://i.ibb.co/6ssCZgn/center-align.png" alt=""></p>
+    <p class="h-[50px] border-2 border-black w-[50px] bg-slate-400 flex justify-center items-center" id="textRightBtn"><img src="https://i.ibb.co/JsTLYBc/right-align.png" alt=""></p>
+  </div>
+
+   <div class="flex gap-3">
+    <p><div class="h-[50px] border-2 border-black w-[50px]" style=" transition: background-color 0.5s;" id="colorBox"></div></p>
+ 
+    <input class="w-32" type="text" id="hexInput" placeholder="Enter Hex Code" />
+    
+  </div>
+
+
+
+</div>
+
+<div class="flex justify-center">
+<textarea id="textArea" class="textarea textarea-info h-[50vh] w-[80vw]  text-2xl" placeholder="Write Here"></textarea>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./app.js"></script>
+</body>
+</html>
